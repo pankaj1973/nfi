@@ -1,6 +1,24 @@
-<script src="https://awesome-table.com/AwesomeTableInclude.js"></script>
-<div data-type="AwesomeTableView" data-filters="" data-viewID="-MEkZl3WZnf3z5HgYEep"></div>
 
 
 
+<div class="myIframe"> 
+  <iframe src="https://view-awesome-table.com/-MEkZl3WZnf3z5HgYEep/view"></iframe>
+</div>
 
+
+.myIframe {
+     position: relative;
+     padding-bottom: 65.25%;
+     padding-top: 30px;
+     height: 0;
+     overflow: auto; 
+     -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
+     border: solid black 1px;
+} 
+.myIframe iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
